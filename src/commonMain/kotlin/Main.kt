@@ -1,11 +1,11 @@
-import com.hoffi.mpp.common.io.json.StringUtils
+import com.hoffi.mpp.common.io.json.Pretty
 
 fun main() {
     println("example json:")
     println(jsonString)
     println()
     println("collapsed:")
-    println(StringUtils.collapseParentheses(jsonString))
+    println(Pretty.collapseParentheses(jsonString))
 }
 
 const val jsonString = """{

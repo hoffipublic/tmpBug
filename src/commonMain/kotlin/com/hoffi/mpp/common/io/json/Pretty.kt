@@ -7,7 +7,7 @@ val RECombineParsOpen = Regex("(?<=$REParOpen)\\s*\\R\\s*(?=$REParOpen)", RegexO
 val RECombineParsClos = Regex("(?<=$REParClos)\\s*\\R\\s*(?=$REParClos)", RegexOption.MULTILINE)
 val RECompressCurlies = Regex("},\\s*\\R\\s+\\{", RegexOption.MULTILINE)
 
-object StringUtils {
+object Pretty {
     fun collapseParentheses(jsonString: String): String {
         var s = jsonString
         s = s.replace(RECombineParsOpen, "") // combine opening parenthesises on separate lines
